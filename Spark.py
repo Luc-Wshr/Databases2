@@ -26,3 +26,5 @@ from pyspark.sql.functions import split
 # die Funktion split nimmt uebrigens eine REGEXP ... hier ist sie halt super-einfach> ein space
 lines = test.select(split(test.value, " ").alias("Zeile"))
 lines.show(10, truncate=100)
+# das Schema: das Split hat ein Array generiert
+lines.printSchema()
