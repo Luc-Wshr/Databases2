@@ -29,11 +29,17 @@ lines.show(10, truncate=100)
 # das Schema: das Split hat ein Array generiert
 lines.printSchema()
 
+# Datentyp vergleichen
+print(f"Ist das Element vom Typ 'string':{dataframe.dtypes[0][1] == 'string'}")
 
+# Regex um Wörter zu finden welche mit einem Buchstaben anfangen, ob Groß oder Klein
+lines = textFile.select(split(textFile.value, "[^a-zA-Z]").alias("Zeile"))
+lines.show(100,truncate=False)
 
-
-
-
+from pyspark.sql.functions import explode, col 
+# Explode erstellt aus jedem Objekt aus einem Array eine neue Zeile
+words = lines.select(explode(col("Zeile")).alias("Word"))
+words.show()
 
 # CSV Daten auslesen
 
