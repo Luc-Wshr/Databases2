@@ -41,6 +41,11 @@ from pyspark.sql.functions import explode, col
 words = lines.select(explode(col("Zeile")).alias("Word"))
 words.show()
 
+# Umwandeln des Datentyps einer Spalte -> Von Typ String zu Typ Timestamp
+from pyspark.sql.types import StringType,BooleanType,DateType,TimestampType
+dataframe = duration.withColumn("Anfang",F.col("Anfang").cast(TimestampType())).withColumn("Ende",F.col("Ende").cast(TimestampType()))
+
+
 # CSV Daten auslesen
 
 citybike = spark.read.csv("202211-citibike-tripdata.csv",header = True)
