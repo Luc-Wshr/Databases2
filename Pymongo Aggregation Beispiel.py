@@ -52,3 +52,19 @@ for x in list(langPipeng):
 #{'_id': 'English, Mandarin', 'count': 60}
 #{'_id': 'English, French, German', 'count': 55}
 #{'_id': 'English, Portuguese', 'count': 53}
+
+##########################
+
+
+langPip = collection.aggregate([
+	{
+        "$sortByCount":"$language"
+    }
+]);
+
+for x in langPip:
+    pprint.pprint(x)
+    
+    
+##############################
+
