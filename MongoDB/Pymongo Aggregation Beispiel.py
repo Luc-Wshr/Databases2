@@ -53,7 +53,7 @@ for x in list(langPipeng):
 #{'_id': 'English, French, German', 'count': 55}
 #{'_id': 'English, Portuguese', 'count': 53}
 
-##########################
+##############################################################################################################
 
 
 langPip = collection.aggregate([
@@ -66,5 +66,54 @@ for x in langPip:
     pprint.pprint(x)
     
     
-##############################
+########################################################################
+#Suche in welchen Einträgen eine bestimmte Person vorkommmt
+langPipeng = collection.aggregate([
+    { 
+        "$match": {
+            "member": {"$regex": "^Harald Bannoehr" }
+        } 
+    }]);
+for x in list(langPipeng):
+    pprint.pprint(x)
+
+####################################################################################
+#Welcher Harald hat in den meisten Bands mitgespielt
+meistenHarrys = collection.aggregate([
+     
+        {
+        "$match": {
+            "member": {"$regex": "^Harald" }
+            }
+        },
+        {
+            "$group":{
+                "_id":"$member",
+                'cnt': {'$sum':1},
+            }},
+            {
+            '$sort':{ "cnt":-1}
+                
+                
+                
+            }
+    ]);
+pprint.pprint(list(meistenHarrys)[0])
+##########################################################################################
+#Zählen wie of der Name John vorkommt
+john=[
+         {
+        "$match": {
+            "member": {"$regex": "John" }
+            }
+        },
+        {
+            "$group":{
+                "_id":"$member",
+                
+            }},{
+            "$count":"John"
+        }
+]
+pprint.pprint(list(collection.aggregate(john)))
 
