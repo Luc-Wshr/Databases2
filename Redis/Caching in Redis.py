@@ -25,6 +25,9 @@ def redisImportAlmostAll(searchPattern):
                     redisVal = instrument
                     print(f"rediskey = { redisKey }, redisVal = { redisVal }\n")
                     r.sadd(redisKey, redisVal)
+                    #Importieren der "aufbereiteten" Daten von Redis in eine MongoDB, r.sadd aus der darüber liegenden Zeile dann entfernen
+                    #val={"name":redisKey,"value":redisVal}
+                    #collection.insert_one(val)
 
     print(f"The total number of records is { counter }\n")
 
