@@ -1,0 +1,12 @@
+airflow.operators.bash
+airflow.operators.branch
+airflow.operators.datetime
+airflow.operators.email
+airflow.operators.empty
+airflow.operators.generic_transfer
+airflow.operators.latest_only
+airflow.operators.python
+airflow.operators.smooth
+airflow.operators.subdag
+airflow.operators.trigger_dagrun
+airflow.operators.weekday
