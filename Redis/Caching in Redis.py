@@ -20,6 +20,9 @@ def redisImportAlmostAll(searchPattern):
             if len(instruments) > searchPattern:
                 print(f"len = {len(instruments)} : {row}")
                 counter += 1
+                #Wenn mehrere Values einem Key hinzugefügt werden müssen
+                #value ={"Künstler": row[2],"Value": instruments}
+                #collection.insert_one(value)
                 for instrument in instruments:
                     redisKey = "artist:" + row[3] + ":" + row[2];
                     redisVal = instrument
