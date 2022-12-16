@@ -1,0 +1,7 @@
+# Das muss in Mongocompass als Aggregation $addFields eingefügt werde
+#Beispiel für eine neue Spalte in der ein die Zeit zwischen ended_at und started_ad berechnet wird
+{
+  duration:{
+    $subtract: ["$ended_at","$started_at"]
+  }
+}
