@@ -1,3 +1,7 @@
+chat.openai.com
+
+
+
 Data Lake unterschiede Data Warehouse?
 
 Data Lake:
