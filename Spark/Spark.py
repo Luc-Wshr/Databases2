@@ -50,3 +50,17 @@ dataframe = duration.withColumn("Anfang",F.col("Anfang").cast(TimestampType())).
 
 citybike = spark.read.csv("202211-citibike-tripdata.csv",header = True)
 citybike.show(truncate=False)
+#################################################################################
+#Spark two Dateien mergen
+ Datei wird als alias gespeichert um diese besser zu initialisieren
+# Für Join erste und zweite Datei machen 
+ta = csv_file1.alias('ta')
+tb = csv_file2.alias('tb') 
+
+# Join zwei Dokumente miteinander, how= kann -> 'full' , 'right' , 'left' oder 'innerjoin' sein
+# Joinen immer auf die Spalte, welche die gleichen ID's haben
+Datei_join = ta.join(tb, ta.tconst == tb.tconst, how='full')
+# Datei mal ausgeben
+Datei_join.show()
+
+# Danach in abspeichern
