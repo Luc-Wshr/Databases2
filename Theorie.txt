@@ -1,0 +1,147 @@
+	Aufabe 1
+	1. mit welchem Wachstum an Daten "kämpft" das durchschnittliche Unternehmen jährlich?
+
+mit etwa 50% pro jahr
+
+	2. wie viele Datenquellen gilt es dabei (im Durchschnitt) abzudecken?
+Im Schnitt sind es 33 einzigartige Datenquellen
+
+	3. Ist der Hauptgrund für das Investment in einen Data-Lake die damit verbundenen niedrigeren Transaktionskosten (und wenn nicht, was ist/sind die anderen Gründe?)
+
+Die Opperative Effiziens erhöhen, 
+	• Daten aus Abteilungssilos verfügbar machen, Großrechner und Altsysteme
+	• Entlastung der Kapazität von Mainframe/Daten Lager
+
+	4. Ist das Ziel eines Data-Lake die bestehenden Legacy-Systeme zu ersetzen? Erkläre Deine Antwort
+
+Das Ziel ist es nicht das Legacy System zu ersetzen sondern dieses zu verbessern und effizienter zu machen 
+	
+	5. Kommt Deiner Meinung nach die erhöhte User-Satisfaction daher, dass die Unternehmen einen Data-Lake eingeführt haben, oder ist der wahre Grund die Tatsache, dass es sich (wahrscheinlich) um progressive Unternehmen handelt, die Ihren Mitarbeitern die richtigen Werkzeuge an die Hand geben wollen (und die Mitarbeiter sowieso glücklich sind, in so einem tollen Unternehmen zu arbeiten?)
+
+Die Sicht des Datennutzers ändert sich zusammen mit den Daten. Diese sollen immer besser und schneller verfügbar sein. Durch die Einführung eines Data Lakes werden diese Punkte erfüllt, wodurch die Nutzerzufriedenheit steigt. 
+
+	6. Welche 3 Metriken korrelieren am meisten mit einer guten Data Lake-Performance, bzw Ergebnissen im Unternehmen?
+
+Effizienz der Datenerfassung. 
+Zugänglichkeit der Daten
+Aktuelle Daten 
+	
+	7. Was für Daten könnten für einen Data-Lake interessant sein, obwohl sie überhaupt nicht aus firmeneigenen Quellen stammen?
+
+Externe strukturierte Daten, z.B. Regierungsinformationen, unstrukturierte oder Textbasierte Daten ( docs, social media), Sensoren oder Geo Daten, Vielfältige Medien wie audio, video
+ 
+	8. wenn es um Data-Lakes geht, wie siehst Du die Gewichtung zwischen "Philosophie" und "Technologie"?. Illustriere Deine Antwort mit Beispielen
+
+Die Philosophie dahinter ist das Prinzip Daten und Informationen zugänglich zentral gespeichert zu haben . Hierbei können Technologien wie Datenbanken oder Dokumentenserver zum einsatz kommen. 
+
+
+	9. Was erwiderst Du, wenn Dir ein Anbieter seine Data-Lake-Solution mit den Hauptargumenten "Flexibel und Skalierbar" schmackhaft machen möchte? Gibt es eine bessere "Zusammenfassung" was Data-Lakes denn für einen Nutzen bringen?
+
+In einem Datalake können strukturierte und unstrukturierte Daten aus verschiedenen Quellen gespeichert werden. Daten können in Ihrem "originalem" Datenformat abgespeichert werden. Die Daten können für Analysen verwendet werden
+
+Aufgabe 2: Die Aufgaben eines Data Lakes, die ein Data Warehouse nicht erfüllt
+Lies Dir den angehängten Artikel "Snowflake und Talend" durch, und beantworte die folgenden Fragen, bzw bearbeite die Arbeitsaufträge:
+	1. Was kann ein Data Warehouse NICHT (und wie erfüllt ein Data Lake diese Anforderung(en))?
+
+Ein DW kann keine unstrukturierten Daten abspeichern ein DataLake hingegen schon. 
+Ein DataLake kann aus beliebigen Quellen Daten abspeichern.
+
+	
+	2. Was sind die 4 Hauptanforderungen an einen Data Lake? Erstelle eine Präsentation, die diese 4 Punkte an Hand von Beispielen erklärt
+
+Datenerfassung
+	Daten vorbereiten um analysen durchführen zu können, ->bereinigen
+	Daten laden
+	Daten analyse
+
+	3. wie haben sich die Rollen von IT und Endanwendern im Kontext von Data Lakes verändert?
+
+Endanwender können nun ohne die Unterstützung von der IT auf die Daten im DataLake zugreifen und Analysen durchführen. 
+
+	4. Erkläre an Hand von Beispielen die 4 Schritte zum Aufbau eines Data Lakes
+	Unterschiedliche Datenquellen zusammenführen
+	MITTELS GOVERNANCE SICHERHEIT GEWÄHRLEISTEN 
+	VON DER DATENINTEGRATION ZUR DATENQUALITÄT
+	SELFSERVICE ERMÖGLICHEN
+
+	1. Erkläre worum es bei dem Kapitel "Mit Predictive Analytics zum Erfolg" geht, und wie sich dieses grundlegend unterscheidet von dem, was wir bisher z.B. mit Excel Dashboards dargestellt haben?
+
+Mit einem DataLake in verbindung mit z.B. einem Cloud-Data Warehouse können schnell predictive Analytics erstellt und getroffen werden. Hierbei können unterschiedliche Datenquellen verwendet werden um Trends schneller erkennen zu können. 
+
+	2. Finde 3 zusätzliche Quellen, die Deine Aussagen belegen
+Aufgabe 3: wann brauchen wir denn nun einen Data Lake, und wann ein Data Warehouse?
+
+Aus <https://moodle.dhbw-loerrach.de/moodle/course/view.php?id=11253> 
+
+beantworte die folgenden Fragen, bzw bearbeite die Arbeitsaufträge:
+	1. erkläre was denn nun wirklich die Hauptunterschiede zwischen einem Data Warehouse und einem Data Lake sind
+
+Ein DataLake ist ein zentraler Speicher und abruf Ort für Daten. Diese können untrukturiert oder Strukturierte Daten beinhalten um damit z.B. analysen durchzuführen. 
+	Ein DataWarehouse kann nur strukturierte Daten speichern und abrufen. Z.B. eine relationale Datenbank 
+
+	2. gib Beispiele für Anwendungen in denen ein, oder die andere (oder beide) die richtige Data XXX Wahl sind.
+Datawarehouse - Analyse von Daten aus strukturiereten Datenbanken 
+Datalake - z.B. zentraler Ablage Ort für Dateien / Videos im Unternehmen
+	3. Lies Dir die 5 Kommentare unter dem Big Data Insider Artikel durch, und argumentiere jeweils für oder gegen die im Kommentar eingenommene Position
+
+Aus <https://moodle.dhbw-loerrach.de/moodle/course/view.php?id=11253> 
+
+Aufgaben Redis
+1. Was ist denn nun ein key-value-store genau?
+
+Ein Key zeigt immer genau auf ein Value. Hierbei gibt es immer 2 spalten, einmal den Key und einmal den Value
+
+2. Nenne 3 verschiedene Key-Value Datenbanksysteme
+
+Redis,
+AmazonDB
+Riak
+
+3. Was ist der Unterschied zu einer Document-Database?
+
+In einer Document.-Database zeigt auch der Key auf ein Value, der Value wiederum kann jedoch noch weitere Key-Value paare enthalten
+
+4. Bezüglich des "C" in ACID - was ist der Hauptunterschied zu relationalen Datenbanken?
+ACID = 
+ Atomicity, Consistency, Isolation und Durability
+
+In einer relationalen Datenbank können nur Strukturierte und Einheitliche Datenabgelegt werden, in einer KV können beliebe Daten abgespeichert werden
+
+5. welche Normalformen gibt es bei Key-Value-Datenbanken?
+
+KEINE
+
+6. Welche Datentypen sind akzeptabel als Key? Was ist der Hauptindex für Key-Value Datenbanken, welchen Datentyp hat er, und wie viele andere Indices kann eine KV-Datenbank haben?
+
+Es kann jeder Datentyp sein.
+
+
+7. angenommen wir haben eine Studentendatenbank (Key-Value), wo der Key die Matrikelnummer ist, und der Value die wichtigen Daten wie Name und Lieblingsbier. Mit welcher Suchmöglichkeit kann mann alle Studis finden, die gerne Guinness trinken?
+
+Es müssen alle Daten angeschaut werden
+
+8. warum bietet sich bei einem Online-Warenkorb (mit großen Umsatzzahlen natürlich, wie z.B. Amazon) eher eine key-Value Datenbank an um den Inhalt des Warenkorbs zu speichern, anstatt einer relationalen Datenbank? "weil es schneller ist" reicht nicht als Antwort. Sei ganz spezifisch!
+
+Da bei einer Relatoinales DB eine Hilftabelle benötigt wird um den Warenkorb darstellen zu können
+
+9. Ist Windows Explorer eine key-value-Datenbank?
+
+Nein
+
+10. Einer der Artikel behauptet: "key-value stores are not considered suitable for applications requiring frequent updates". Ist das nicht genau das Gegenteil von der Aussage in Aufgabe 7 (Warenkörbe, Session-Daten, usw..). Diskutiere, was hier abgeht/wer Recht hat/was das eigentliche Problem ist!
+
+Updates sind schwierig wenn Platz benötigt wird.
+
+11. Nenne 5 verschiedene Anwendungen wo Key-Value-Datenbanken Vorteile gegenüber Relationalen Datenbanken haben, und beschreibe spezifisch für jeden Fall, was genau der Vorteil ist (und: was potentielle Nachteile sind)
+-Warenkörbe
+
+
+
+
+12. Be- oder widerlege die folgende Aussage (idealerweise an Hand eines Beispiels) "Dokumentendatenbanken sind das Gleiche wie Kev-Value Datenbanken"
+13. Erkläre an Hand eines Beispiels was die Auswirkungen sind, wenn man im laufenden Betrieb die Feldstruktur einer KV-Datenbank verändert, und vergleiche es mit dem, was analog bei einer relationalen Datenbank passieren würde.
+Diskutiert Eurer Antworten auch gerne in der Gruppe oder mit Partnern. Wenn Ihr schöne Musterlösungen bereitstellt, können wir diese gerne für die Klausuren nutzen.
+
+Aus <https://moodle.dhbw-loerrach.de/moodle/course/view.php?id=11253> 
+
+
