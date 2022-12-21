@@ -35,10 +35,10 @@ im folgenden Code hat sich der Fehlerteufel eingeschlichen. Finde die 5 Fehler (
 # Lösung:
 
 - The first error is that the connect variable is being assigned the result of a tuple, rather than a dictionary. To fix this, you should remove the square brackets around "collection".
-- The second error is that MongoClient was neber imported and therefore cannot be used
-- The third error is that the connection variable is being used, but it has not been defined. This should be changed to connect.
-- The fourth error is that the $mismatch operator is not a valid operator in MongoDB. This should be changed to the $match operator.
-- The fifth error is that the opening bracket of the pipeline at "pipe2 = [" is never closed
+- Der zweite Fehler ist, dass MongoClient nie importiert wurde, und daher auch nicht verwendet werden kann
+- Der dritte Fehler ist die unten verwendete connection.aggregate, hier müsste connect.aggregate verwendet werden, da so unsere Verbindung oben benannt wurde
+- Der vierte Fehler ist der $mismatch operator, den gibt es nicht, hier muss der $match operator genutzt werden
+- Der fünfte Fehler ist, dass die offene Klammer bei "pipe2 = [" niemals geschlossen wurde
 
 If these errors were fixed, the code would:
 
