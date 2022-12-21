@@ -35,10 +35,10 @@ im folgenden Code hat sich der Fehlerteufel eingeschlichen. Finde die 5 Fehler (
 # Lösung:
 
 - The first error is that the connect variable is being assigned the result of a tuple, rather than a dictionary. To fix this, you should remove the square brackets around "collection".
-- The second error is that the pipe2 variable is misspelled as pipeline.
+- The second error is that MongoClient was neber imported and therefore cannot be used
 - The third error is that the connection variable is being used, but it has not been defined. This should be changed to connect.
 - The fourth error is that the $mismatch operator is not a valid operator in MongoDB. This should be changed to the $match operator.
-- The fifth error is that the print(result) statement is indented too far. It should be at the same level of indentation as the result assignment.
+- The fifth error is that the opening bracket of the pipeline at "pipe2 = [" is never closed
 
 If these errors were fixed, the code would:
 
