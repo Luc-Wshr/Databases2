@@ -41,3 +41,27 @@ Aufgabe 3:
 3. Fehler: mismatch gibt es nicht
 4. Fehler: Eckige Klammer von Pipe2= [ wird nie geschlossen
 5. Fehler= Müsste das sein: das man das client["database"],["collection"] nicht machen kann. Collection und Datenbank aufeinmal angeben
+
+
+
+Aufgabe 6:
+
+1.Technologien:
+Relationale Datenbanken (z.B. MySQL, PostgreSQL) können für die Verwaltung und Speicherung von HR-Daten eingesetzt werden, die in Tabellenform vorliegen.
+NoSQL-Datenbanken (z.B. MongoDB, Cassandra) können für die Verwaltung unstrukturierter Daten eingesetzt werden, wie z.B. Bewerber-Profile, Feedback, etc.
+
+2.Migration:
+Um die vorhandenen Daten zu migrieren, könnte man das Tool für Datenbankmigration (z.B. Apache Nifi, Talend) verwenden.
+Die neuen Daten könnten in einer separaten Datenbank gespeichert werden und mit den vorhandenen Daten über eine API integriert werden.
+
+3.Datenerhaltung:
+Ein Data Warehouse (z.B. Amazon Redshift, Google BigQuery) kann verwendet werden, um Daten aus verschiedenen Quellen zu sammeln und zu integrieren, um benötigte Daten zu erhalten.
+
+4.Reporting, Datenhaltung, Backups:
+Ein Business Intelligence-Tool (z.B. Tableau, Power BI) kann verwendet werden, um Reports und Analysen zu erstellen.
+Ein Backup-System (z.B. AWS S3, Microsoft Azure Blob Storage) kann verwendet werden, um regelmäßige Backups der Datenbanken zu erstellen.
+
+5.Auswirkungen auf die Datenbanken:
+Die Wahl einer bestimmten Expansionsstrategie (z.B. Marketing, Website) kann die Anzahl der Benutzer und die Menge an Daten beeinflussen, die in die Datenbanken eingefügt werden.
+Dies kann zu Performance-Problemen führen, die durch den Einsatz von Skalierungstechnologien (z.B. Sharding, Replikation) behoben werden können.
+Es ist wichtig, dass regelmäßige Überwachung und Wartung durchgeführt werden, um mögliche Bottlenecks oder Risiken zu identifizieren und zu beheben.
