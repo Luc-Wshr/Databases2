@@ -1,19 +1,36 @@
  Aufgabe 1: Nenne 3 verschiedene Aspekte eines Shopping-Cart-Systems wo Key-Value-Datenbanken Vorteile gegenüber Relationalen Datenbanken haben, und beschreibe spezifisch (aber dennoch stichwortartig) für jeden Fall, was genau der jeweilige Vorteil ist (und: was potentielle Nachteile sind)
 
 Skalierbarkeit: 
-Key-Value-Datenbanken sind in der Lage, große Datenmengen horizontal zu skalieren, 
-indem sie die Daten über mehrere Knoten hinweg verteilen. Dies ermöglicht eine bessere Handhabbarkeit großer Datenmengen und verbessert die Leistung bei hoher Last.
-Ein Nachteil kann sein, dass Key-Value-Datenbanken weniger flexibel sind bei der Modellierung und Verwaltung von Beziehungen zwischen Daten.
+Key-Value-Datenbanken sind in der Lage, große Datenmengen horizontal zu skalieren, indem sie die Daten über mehrere Knoten hinweg verteilen. Dies ermöglicht eine bessere Handhabbarkeit großer Datenmengen und verbessert die Leistung bei hoher Last. Ein Nachteil kann sein, dass Key-Value-Datenbanken weniger flexibel sind bei der Modellierung und Verwaltung von Beziehungen zwischen Daten.
 
 Lesegeschwindigkeit: 
-Key-Value-Datenbanken verwenden eine sehr einfache Indizierungsstruktur, 
-die es ermöglicht, Daten schnell und effizient abzurufen. Dies ist besonders wichtig für E-Commerce-Systeme, 
-bei denen schnelle Leseoperationen erforderlich sind, um Produkte in Echtzeit anzuzeigen. 
-Ein Nachteil kann sein, dass Key-Value-Datenbanken eine eingeschränktere Unterstützung für komplexe Abfragen und Datenanalyse bieten.
+Key-Value-Datenbanken verwenden eine sehr einfache Indizierungsstruktur, die es ermöglicht, Daten schnell und effizient abzurufen. Dies ist besonders wichtig für E-Commerce-Systeme, bei denen schnelle Leseoperationen erforderlich sind, um Produkte in Echtzeit anzuzeigen. Ein Nachteil kann sein, dass Key-Value-Datenbanken eine eingeschränktere Unterstützung für komplexe Abfragen und Datenanalyse bieten.
 
 Verfügbarkeit: 
-Key-Value-Datenbanken sind in der Regel sehr robust und bieten hohe Verfügbarkeit,
-da sie Daten über mehrere Knoten verteilen und so für den Fall, dass ein Knoten ausfällt, eine Redundanz bereitstellen. 
-Dies ist besonders wichtig für E-Commerce-Systeme, bei denen eine ununterbrochene Verfügbarkeit erforderlich ist, um Verkäufe und Umsatz nicht zu beeinträchtigen. 
-Ein Nachteil kann sein, dass Key-Value-Datenbanken eine geringere Integrität der Daten bieten, 
-da sie keine starren Regeln für die Überprüfung und Überwachung von Daten haben.
+Key-Value-Datenbanken sind in der Regel sehr robust und bieten hohe Verfügbarkeit, da sie Daten über mehrere Knoten verteilen und so für den Fall, dass ein Knoten ausfällt, eine Redundanz bereitstellen. Dies ist besonders wichtig für E-Commerce-Systeme, bei denen eine ununterbrochene Verfügbarkeit erforderlich ist, um Verkäufe und Umsatz nicht zu beeinträchtigen. Ein Nachteil kann sein, dass Key-Value-Datenbanken eine geringere Integrität der Daten bieten, da sie keine starren Regeln für die Überprüfung und Überwachung von Daten haben.
+
+
+Aufgabe 2:
+Ein Data Warehouse und ein Data Mart sind beide Arten von Datenspeichersystemen, aber sie haben einige wichtige Unterschiede.
+
+Ein Data Warehouse ist ein zentralisiertes Repository für Daten aus verschiedenen Quellen und Abteilungen innerhalb eines Unternehmens. Es ist entworfen, um große Mengen an Daten zu speichern und zu verwalten, die für Analysen und Entscheidungen genutzt werden. Ein Data Warehouse ist in der Regel ein integriertes System, das eine ganzheitliche Sicht auf die Daten des Unternehmens bietet.
+
+Ein Data Mart hingegen ist ein spezialisiertes Subsystem innerhalb eines Data Warehouses, das auf einen bestimmten Geschäftsbereich oder eine Abteilung zugeschnitten ist. Es konzentriert sich auf einen bestimmten Aspekt der Geschäftstätigkeit, wie beispielsweise Kundendaten, Finanzen oder Lieferketten. Ein Data Mart enthält in der Regel nur eine Teilmenge der Daten aus dem Data Warehouse und ist für eine spezifische Anwendung oder Abteilung konzipiert.
+
+Zusammenfassend lässt sich sagen, dass ein Data Warehouse ein zentrales Repository für alle Daten des Unternehmens ist, während ein Data Mart ein spezialisiertes Subsystem innerhalb des Data Warehouses ist, das auf einen bestimmten Geschäftsbereich ausgerichtet ist.
+
+Data Warehouse Anwendungen:
+
+Verwaltung von Kundendaten: Ein Data Warehouse kann genutzt werden, um Kundendaten aus verschiedenen Quellen wie Online-Formularen, E-Mail-Kampagnen und CRM-Systemen zu integrieren und zu analysieren.
+
+Finanzielle Analysen: Ein Data Warehouse kann verwendet werden, um Finanzdaten aus verschiedenen Systemen wie Rechnungswesen, Controlling und Buchhaltung zu integrieren und zu analysieren, um Trends und Prognosen zu erstellen.
+
+Supply Chain Management: Ein Data Warehouse kann genutzt werden, um Lieferketten- und Logistikdaten zu integrieren und zu analysieren, um Prozesse zu optimieren und Risiken zu minimieren.
+
+Data Mart Anwendungen:
+
+Kundenanalyse: Ein Data Mart kann für die Analyse von Kundendaten genutzt werden, um Verkaufsstrategien zu entwickeln und Kundenbindung zu verbessern.
+
+Finanzmanagement: Ein Data Mart kann für die Finanzanalyse eines bestimmten Geschäftsbereichs oder einer Abteilung genutzt werden, um Budgets zu verwalten und Entscheidungen zu treffen.
+
+Personalmanagement: Ein Data Mart kann genutzt werden, um Personal- und Lohn- und Gehaltsdaten zu integrieren und zu analysieren, um die Personalentwicklung zu überwachen und Entscheidungen zu treffen.
