@@ -1,1 +1,10 @@
+ Aufgabe 1: Nenne 3 verschiedene Aspekte eines Shopping-Cart-Systems wo Key-Value-Datenbanken Vorteile gegenüber Relationalen Datenbanken haben, und beschreibe spezifisch (aber dennoch stichwortartig) für jeden Fall, was genau der jeweilige Vorteil ist (und: was potentielle Nachteile sind)
 
+Skalierbarkeit: 
+Key-Value-Datenbanken sind in der Lage, große Datenmengen horizontal zu skalieren, indem sie die Daten über mehrere Knoten hinweg verteilen. Dies ermöglicht eine bessere Handhabbarkeit großer Datenmengen und verbessert die Leistung bei hoher Last. Ein Nachteil kann sein, dass Key-Value-Datenbanken weniger flexibel sind bei der Modellierung und Verwaltung von Beziehungen zwischen Daten.
+
+Lesegeschwindigkeit: 
+Key-Value-Datenbanken verwenden eine sehr einfache Indizierungsstruktur, die es ermöglicht, Daten schnell und effizient abzurufen. Dies ist besonders wichtig für E-Commerce-Systeme, bei denen schnelle Leseoperationen erforderlich sind, um Produkte in Echtzeit anzuzeigen. Ein Nachteil kann sein, dass Key-Value-Datenbanken eine eingeschränktere Unterstützung für komplexe Abfragen und Datenanalyse bieten.
+
+Verfügbarkeit: 
+Key-Value-Datenbanken sind in der Regel sehr robust und bieten hohe Verfügbarkeit, da sie Daten über mehrere Knoten verteilen und so für den Fall, dass ein Knoten ausfällt, eine Redundanz bereitstellen. Dies ist besonders wichtig für E-Commerce-Systeme, bei denen eine ununterbrochene Verfügbarkeit erforderlich ist, um Verkäufe und Umsatz nicht zu beeinträchtigen. Ein Nachteil kann sein, dass Key-Value-Datenbanken eine geringere Integrität der Daten bieten, da sie keine starren Regeln für die Überprüfung und Überwachung von Daten haben.
