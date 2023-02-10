@@ -1,0 +1,11 @@
+# Aufgabe 3
+
+# Nach dem Customer type gruppieren und die durschnittliche Rating Bewertung aggregaten
+membersatisfaction = file.groupBy('Customer type').agg({'Rating' : 'avg'})
+
+# Jetzt noch nach dem Rating sortieren
+result = membersatisfaction.orderBy('avg(Rating)')
+result.show()
+
+# Als eine CSV-Datei exportieren
+result.coalesce(1).write.csv("resultdata.csv", header = True)
