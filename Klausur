@@ -34,3 +34,10 @@ Kundenanalyse: Ein Data Mart kann für die Analyse von Kundendaten genutzt werde
 Finanzmanagement: Ein Data Mart kann für die Finanzanalyse eines bestimmten Geschäftsbereichs oder einer Abteilung genutzt werden, um Budgets zu verwalten und Entscheidungen zu treffen.
 
 Personalmanagement: Ein Data Mart kann genutzt werden, um Personal- und Lohn- und Gehaltsdaten zu integrieren und zu analysieren, um die Personalentwicklung zu überwachen und Entscheidungen zu treffen.
+
+Aufgabe 3:
+1. Fehler: Import Mongodb fehlt
+2. Fehler : connect musst connection= heißen
+3. Fehler: mismatch gibt es nicht
+4. Fehler: Eckige Klammer von Pipe2= [ wird nie geschlossen
+5. Fehler= Müsste das sein: das man das client["database"],["collection"] nicht machen kann. Collection und Datenbank aufeinmal angeben
